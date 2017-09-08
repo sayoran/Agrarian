@@ -1,12 +1,36 @@
 {
 	"forge_marker": 1,
+	"defaults": {
+		"model": "agrarian:seed_analyzer.obj",
+		"transform": "forge:default-block",
+		"textures": {}
+	},
 	"variants": {
-		"normal": {
-			"model": "agrarian:seed_analyzer"
+		"normal": [{}],
+		"inventory": [{
+			"submodel": "agrarian:seed_analyzer_book.obj"
+		}],
+		"journal": {
+			"true": {
+				"submodel": "agrarian:seed_analyzer_book.obj"
+			},
+			"false": {
+			}
 		},
-		"inventory": {
-			"model": "agrarian:seed_analyzer",
-			"transform": "forge:default-block"
+		"facing": {
+			"north": {
+			},
+			"south": {
+				"y": 180
+			},
+			"west": {
+				"y": 90
+			},
+			"east": {
+				"y": 270
+			},
+			"down": {},
+			"up": {}
 		}
 	}
 }

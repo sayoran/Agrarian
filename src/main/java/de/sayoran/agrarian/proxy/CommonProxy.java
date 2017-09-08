@@ -4,6 +4,7 @@ import de.sayoran.agrarian.Agrarian;
 import de.sayoran.agrarian.block.analyzer.TileEntityAnalyzer;
 import net.minecraft.item.Item;
 import net.minecraft.util.text.translation.I18n;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 public class CommonProxy {
 
@@ -18,4 +19,6 @@ public class CommonProxy {
     public void registerRenderers() {
     }
 
+    public void preInit(FMLPreInitializationEvent e) {
+    }
 }
