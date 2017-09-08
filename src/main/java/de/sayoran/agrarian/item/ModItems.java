@@ -14,6 +14,7 @@ public class ModItems {
     public static ItemBase trowel = new ItemBase("trowel");
     public static ItemCornSeed cornSeed = new ItemCornSeed();
     public static ItemBase corn = new ItemBase("corn");
+    public static ItemBase poppedCorn = new ItemBase("popped_corn");
 
     public static void register(IForgeRegistry<Item> registry) {
         registry.registerAll(
@@ -23,7 +24,8 @@ public class ModItems {
                 magnifyingGlass,
                 trowel,
                 cornSeed,
-                corn
+                corn,
+                poppedCorn
         );
     }
 
@@ -35,6 +37,7 @@ public class ModItems {
         trowel.registerItemModel();
         cornSeed.registerItemModel();
         corn.registerItemModel();
+        poppedCorn.registerItemModel();
     }
 
 }
