@@ -24,5 +24,4 @@ public class AgrarianTab extends CreativeTabs {
 
         return false;
     }
-    public static final  AgrarianTab creativeTab = new AgrarianTab();
 }
