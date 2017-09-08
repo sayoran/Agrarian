@@ -11,6 +11,7 @@ public class AgrarianTab extends CreativeTabs {
     public AgrarianTab() {
 
         super(Agrarian.modId);
+        setBackgroundImageName("item_search.png");
            }
 
     @Override
@@ -22,6 +23,6 @@ public class AgrarianTab extends CreativeTabs {
     @Override
     public boolean hasSearchBar() {
 
-        return false;
+        return true;
     }
 }
