@@ -48,6 +48,7 @@ public class Agrarian {
     public void preInit(FMLPreInitializationEvent event) {
         NetworkRegistry.INSTANCE.registerGuiHandler(this, new ModGuiHandler());
         proxy.registerRenderers();
+        proxy.preInit(event);
 
         network = NetworkRegistry.INSTANCE.newSimpleChannel(modId);
         network.registerMessage(new PacketUpdateAnalyzer.Handler(), PacketUpdateAnalyzer.class, 0, Side.CLIENT);
