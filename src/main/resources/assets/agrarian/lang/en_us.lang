@@ -1,0 +1,12 @@
+# Items
+item.clipper.name=Clipper
+item.crop_sticks.name=Crop Sticks
+item.journal.name=Agrarian Journal
+item.magnifying_glass.name=Magnifying Glass
+item.trowel.name=Trowel
+
+# Blocks
+tile.seed_analyzer.name=Seed Analyzer
+
+# Misc
+itemGroup.agrarian=Agrarian

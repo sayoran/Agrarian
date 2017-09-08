@@ -1,0 +1,12 @@
+{
+	"forge_marker": 1,
+	"variants": {
+		"normal": {
+			"model": "agrarian:seed_analyzer"
+		},
+		"inventory": {
+			"model": "agrarian:seed_analyzer",
+			"transform": "forge:default-block"
+		}
+	}
+}
