@@ -16,7 +16,7 @@ public class ContainerAnalyzer extends Container {
         IItemHandler inventory = analyzer.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, EnumFacing.NORTH);
 
         for (int h = 0; h < 2; h++) {
-            addSlotToContainer(new SlotItemHandler(inventory, h, 80 + h * 18, 35) {
+            addSlotToContainer(new SlotItemHandler(inventory, h, 80 + h * 72, 40 + h * 28) {
                 @Override
                 public void onSlotChanged() {
                     analyzer.markDirty();
@@ -26,12 +26,12 @@ public class ContainerAnalyzer extends Container {
 
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 9; j++) {
-                addSlotToContainer(new Slot(playerInv, j + i * 9 + 9, 8 + j * 18, 84 + i * 18));
+                addSlotToContainer(new Slot(playerInv, j + i * 9 + 9, 8 + j * 18, 94 + i * 18));
             }
         }
 
         for (int k = 0; k < 9; k++) {
-            addSlotToContainer(new Slot(playerInv, k, 8 + k * 18, 142));
+            addSlotToContainer(new Slot(playerInv, k, 8 + k * 18, 152));
         }
     }
 
