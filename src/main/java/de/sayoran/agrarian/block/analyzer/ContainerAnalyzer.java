@@ -14,12 +14,15 @@ public class ContainerAnalyzer extends Container {
 
     public ContainerAnalyzer(InventoryPlayer playerInv, final TileEntityAnalyzer analyzer) {
         IItemHandler inventory = analyzer.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, EnumFacing.NORTH);
-        addSlotToContainer(new SlotItemHandler(inventory, 0, 80, 35) {
-            @Override
-            public void onSlotChanged() {
-                analyzer.markDirty();
-            }
-        });
+
+        for (int h = 0; h < 2; h++) {
+            addSlotToContainer(new SlotItemHandler(inventory, h, 80 + h * 18, 35) {
+                @Override
+                public void onSlotChanged() {
+                    analyzer.markDirty();
+                }
+            });
+        }
 
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 9; j++) {

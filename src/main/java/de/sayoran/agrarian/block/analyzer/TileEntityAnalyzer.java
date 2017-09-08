@@ -16,7 +16,7 @@ import javax.annotation.Nullable;
 
 public class TileEntityAnalyzer extends TileEntity {
 
-    public ItemStackHandler inventory = new ItemStackHandler(1) {
+    public ItemStackHandler inventory = new ItemStackHandler(2) {
         @Override
         protected void onContentsChanged(int slot) {
             if (!world.isRemote) {
