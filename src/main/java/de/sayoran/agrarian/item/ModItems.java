@@ -12,6 +12,8 @@ public class ModItems {
     public static ItemBase journal = new ItemBase("journal");
     public static ItemBase magnifyingGlass = new ItemBase("magnifying_glass");
     public static ItemBase trowel = new ItemBase("trowel");
+    public static ItemCornSeed cornSeed = new ItemCornSeed();
+    public static ItemBase corn = new ItemBase("corn").setCreativeTab(CreativeTabs.FOOD);
 
     public static void register(IForgeRegistry<Item> registry) {
         registry.registerAll(
@@ -19,7 +21,9 @@ public class ModItems {
                 clipper,
                 journal,
                 magnifyingGlass,
-                trowel
+                trowel,
+                cornSeed,
+                corn
         );
     }
 
@@ -29,6 +33,8 @@ public class ModItems {
         journal.registerItemModel();
         magnifyingGlass.registerItemModel();
         trowel.registerItemModel();
+        cornSeed.registerItemModel();
+        corn.registerItemModel();
     }
 
 }

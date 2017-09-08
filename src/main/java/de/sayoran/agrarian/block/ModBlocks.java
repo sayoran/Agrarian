@@ -10,13 +10,14 @@ import net.minecraftforge.registries.IForgeRegistry;
 public class ModBlocks {
 
     public static BlockAnalyzer seedAnalyzer = new BlockAnalyzer();
-
+    public static BlockCropCorn cropCorn = new BlockCropCorn();
 
 
 
     public static void register(IForgeRegistry<Block> registry) {
         registry.registerAll(
-            seedAnalyzer
+            seedAnalyzer,
+                cropCorn
         );
 
         GameRegistry.registerTileEntity(seedAnalyzer.getTileEntityClass(), seedAnalyzer.getRegistryName().toString());
