@@ -9,17 +9,20 @@ import de.sayoran.agrarian.item.ModItems;
 public class AgrarianTab extends CreativeTabs {
 
     public AgrarianTab() {
+
         super(Agrarian.modId);
+        setBackgroundImageName("item_search.png");
            }
 
     @Override
     public ItemStack getTabIconItem() {
+
         return new ItemStack(ModItems.cropSticks);
     }
 
     @Override
     public boolean hasSearchBar() {
-        return false;
-    }
 
+        return true;
+    }
 }

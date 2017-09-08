@@ -1,5 +1,6 @@
 package de.sayoran.agrarian;
 
+import de.sayoran.agrarian.recipe.ModRecipes;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -57,7 +58,7 @@ public class Agrarian {
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
-
+        ModRecipes.init();
     }
 
     @Mod.EventHandler
