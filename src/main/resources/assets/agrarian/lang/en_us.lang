@@ -4,6 +4,8 @@ item.crop_sticks.name=Crop Sticks
 item.journal.name=Agrarian Journal
 item.magnifying_glass.name=Magnifying Glass
 item.trowel.name=Trowel
+item.corn.name=Corn
+item.corn_seed.name=Corn Seed
 
 # Blocks
 tile.seed_analyzer.name=Seed Analyzer
