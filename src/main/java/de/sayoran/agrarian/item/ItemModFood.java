@@ -6,8 +6,9 @@ import net.minecraftforge.oredict.OreDictionary;
 
 public class ItemModFood extends ItemFood {
     protected String name;
-    public ItemModFood(String name, int amount, float saturation, boolean isWolfFood){
+    public ItemModFood(String name, int amount, float saturation, boolean isWolfFood, int stackSize){
         super(amount,saturation,isWolfFood);
+        this.setMaxStackSize(stackSize);
         this.name = name;
         setUnlocalizedName(name);
         setRegistryName(name);
