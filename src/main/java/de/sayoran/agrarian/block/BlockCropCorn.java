@@ -1,7 +1,7 @@
 package de.sayoran.agrarian.block;
 
 import de.sayoran.agrarian.Agrarian;
-import de.sayoran.agrarian.item.ModItems;
+import de.sayoran.agrarian.init.ModItems;
 import net.minecraft.block.BlockCrops;
 import net.minecraft.item.Item;
 

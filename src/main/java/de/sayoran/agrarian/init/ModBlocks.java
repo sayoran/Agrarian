@@ -1,5 +1,6 @@
-package de.sayoran.agrarian.block;
+package de.sayoran.agrarian.init;
 
+import de.sayoran.agrarian.block.BlockCropCorn;
 import de.sayoran.agrarian.block.analyzer.BlockAnalyzer;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;

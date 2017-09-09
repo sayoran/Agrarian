@@ -7,7 +7,7 @@ import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.util.ResourceLocation;
 import de.sayoran.agrarian.Agrarian;
-import de.sayoran.agrarian.block.ModBlocks;
+import de.sayoran.agrarian.init.ModBlocks;
 
 public class GuiAnalyzer extends GuiContainer {
 
