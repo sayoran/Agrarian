@@ -35,6 +35,7 @@ public class Agrarian {
     public static final String name = "Agrarian";
     public static final String version = "0.0.1";
 
+
     @Mod.Instance(modId)
     public static Agrarian instance;
 

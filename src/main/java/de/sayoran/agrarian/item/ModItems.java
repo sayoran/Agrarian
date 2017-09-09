@@ -36,8 +36,8 @@ public class ModItems {
         magnifyingGlass.registerItemModel();
         trowel.registerItemModel();
         cornSeed.registerItemModel();
-        corn.registerItemModel("corn"); //TODO: no String parameter needed
-        poppedCorn.registerItemModel("popped_corn");
+        corn.registerItemModel();
+        poppedCorn.registerItemModel();
     }
 
 }

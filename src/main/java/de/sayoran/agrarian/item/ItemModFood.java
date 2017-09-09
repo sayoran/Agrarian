@@ -5,14 +5,16 @@ import net.minecraft.item.ItemFood;
 import net.minecraftforge.oredict.OreDictionary;
 
 public class ItemModFood extends ItemFood {
+    protected String name;
     public ItemModFood(String name, int amount, float saturation, boolean isWolfFood){
         super(amount,saturation,isWolfFood);
+        this.name = name;
         setUnlocalizedName(name);
         setRegistryName(name);
         setCreativeTab(Agrarian.creativeTab);
     }
 
-    public void registerItemModel(String name){ //TODO: no String parameter needed
+    public void registerItemModel(){
         Agrarian.proxy.registerItemRenderer(this, 0, name);
     }
 
