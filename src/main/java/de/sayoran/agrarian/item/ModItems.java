@@ -9,7 +9,7 @@ public class ModItems {
 
     public static ItemBase cropSticks = new ItemBase("crop_sticks");
     public static ItemBase clipper = new ItemBase("clipper");
-    public static ItemBase journal = new ItemBase("journal");
+    public static ItemTools journal = new ItemTools("journal");
     public static ItemBase magnifyingGlass = new ItemBase("magnifying_glass");
     public static ItemBase trowel = new ItemBase("trowel");
     public static ItemCornSeed cornSeed = new ItemCornSeed();
