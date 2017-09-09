@@ -8,8 +8,9 @@ public class ItemBase extends Item {
 
     protected String name;
 
-    public ItemBase(String name) {
+    public ItemBase(String name, int stackSize) {
         this.name = name;
+        this.setMaxStackSize(stackSize);
         setUnlocalizedName(name);
         setRegistryName(name);
 
