@@ -26,8 +26,7 @@ public class TESRAnalyzer extends TileEntitySpecialRenderer<TileEntityAnalyzer> 
             RenderHelper.enableStandardItemLighting();
             GlStateManager.tryBlendFuncSeparate(GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA, 1, 0);
             GlStateManager.pushMatrix();
-            double offset = Math.sin((te.getWorld().getTotalWorldTime() - te.lastChangeTime + partialTicks) / 8) / 4.0;
-            GlStateManager.translate(x + 0.5, y + 1.25 + offset, z + 0.5);
+            GlStateManager.translate(x + 0.5, y + 0.4, z + 0.5);
             GlStateManager.rotate((te.getWorld().getTotalWorldTime() + partialTicks) * 4, 0, 1, 0);
 
             IBakedModel model = Minecraft.getMinecraft().getRenderItem().getItemModelWithOverrides(stack, te.getWorld(), null);
