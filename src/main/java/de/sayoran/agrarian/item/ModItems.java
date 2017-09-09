@@ -13,8 +13,8 @@ public class ModItems {
     public static ItemBase magnifyingGlass = new ItemBase("magnifying_glass");
     public static ItemBase trowel = new ItemBase("trowel");
     public static ItemCornSeed cornSeed = new ItemCornSeed();
-    public static ItemBase corn = new ItemBase("corn");
-    public static ItemBase poppedCorn = new ItemBase("popped_corn");
+    public static ItemModFood corn = new ItemModFood("corn", 3, 0.6f,false);
+    public static ItemModFood poppedCorn = new ItemModFood("popped_corn", 4, 0.6f,false);
 
     public static void register(IForgeRegistry<Item> registry) {
         registry.registerAll(
@@ -36,8 +36,8 @@ public class ModItems {
         magnifyingGlass.registerItemModel();
         trowel.registerItemModel();
         cornSeed.registerItemModel();
-        corn.registerItemModel();
-        poppedCorn.registerItemModel();
+        corn.registerItemModel("corn"); //TODO: no String parameter needed
+        poppedCorn.registerItemModel("popped_corn");
     }
 
 }
