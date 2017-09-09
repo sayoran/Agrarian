@@ -11,7 +11,7 @@ public class ModItems {
     public static ItemBase clipper = new ItemBase("clipper", 1);
     public static ItemBase journal = new ItemBase("journal", 1);
     public static ItemBase magnifyingGlass = new ItemBase("magnifying_glass", 1);
-    public static ItemBase trowel = new ItemBase("trowel",1);
+    public static ItemBase trowel = new ItemBase("trowel", 1);
     public static ItemCornSeed cornSeed = new ItemCornSeed();
     public static ItemModFood corn = new ItemModFood("corn", 3, 0.6f,false);
     public static ItemModFood poppedCorn = new ItemModFood("popped_corn", 4, 0.6f,false);
