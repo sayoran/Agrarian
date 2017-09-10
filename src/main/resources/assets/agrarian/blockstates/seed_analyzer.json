@@ -1,6 +1,7 @@
 {
 	"forge_marker": 1,
 	"defaults": {
+		"custom": { "flip-v": true },
 		"model": "agrarian:seed_analyzer.obj",
 		"transform": "forge:default-block",
 		"textures": {}
@@ -8,11 +9,11 @@
 	"variants": {
 		"normal": [{}],
 		"inventory": [{
-			"submodel": "agrarian:seed_analyzer_book.obj"
+
 		}],
 		"journal": {
 			"true": {
-				"submodel": "agrarian:seed_analyzer_book.obj"
+
 			},
 			"false": {
 			}
