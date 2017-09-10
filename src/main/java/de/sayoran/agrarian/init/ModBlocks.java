@@ -26,6 +26,7 @@ public class ModBlocks {
         );
 
         GameRegistry.registerTileEntity(seedAnalyzer.getTileEntityClass(), seedAnalyzer.getRegistryName().toString());
+        GameRegistry.registerTileEntity(blockCrop.getTileEntityClass(), blockCrop.getRegistryName().toString());
 
     }
 
