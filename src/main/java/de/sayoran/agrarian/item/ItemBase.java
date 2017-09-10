@@ -16,8 +16,13 @@ public class ItemBase extends Item {
 
         setCreativeTab(Agrarian.creativeTab);
     }
+//TODO: delete if never used
+    public String getName(){
+        return name;
+    }
 
     public void registerItemModel() {
+
         Agrarian.proxy.registerItemRenderer(this, 0, name);
     }
 

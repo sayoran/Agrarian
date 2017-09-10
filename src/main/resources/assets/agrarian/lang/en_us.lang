@@ -7,6 +7,7 @@ item.trowel.name=Trowel
 item.corn.name=Corn
 item.corn_seed.name=Corn Seed
 item.popped_corn.name=Popcorn
+item.clipping.name=Clipping
 
 # Blocks
 tile.seed_analyzer.name=Seed Analyzer

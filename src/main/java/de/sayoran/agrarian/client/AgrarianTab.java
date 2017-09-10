@@ -3,8 +3,7 @@ package de.sayoran.agrarian.client;
 import de.sayoran.agrarian.Agrarian;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
-import de.sayoran.agrarian.Agrarian;
-import de.sayoran.agrarian.item.ModItems;
+import de.sayoran.agrarian.init.ModItems;
 
 public class AgrarianTab extends CreativeTabs {
 

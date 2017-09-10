@@ -22,6 +22,7 @@ public class BlockBase extends Block {
     }
 
     public void registerItemModel(Item item) {
+
         Agrarian.proxy.registerItemRenderer(item, 0, name);
     }
 

@@ -11,8 +11,8 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import de.sayoran.agrarian.proxy.CommonProxy;
 import de.sayoran.agrarian.client.AgrarianTab;
-import de.sayoran.agrarian.item.ModItems;
-import de.sayoran.agrarian.block.ModBlocks;
+import de.sayoran.agrarian.init.ModItems;
+import de.sayoran.agrarian.init.ModBlocks;
 import net.minecraft.item.Item;
 import net.minecraft.block.Block;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
@@ -68,7 +68,7 @@ public class Agrarian {
     }
 
     @Mod.EventBusSubscriber
-    public static class RegsitrationHandler {
+    public static class RegistrationHandler {
 
         @SubscribeEvent
         public static void registerItems(RegistryEvent.Register<Item> event) {

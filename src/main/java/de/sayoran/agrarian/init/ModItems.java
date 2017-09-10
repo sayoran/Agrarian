@@ -1,13 +1,13 @@
 package de.sayoran.agrarian.item;
 
-import de.sayoran.agrarian.item.tool.ItemCropSticks;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.registries.IForgeRegistry;
 
 
 public class ModItems {
 
-    public static ItemCropSticks cropSticks = new ItemCropSticks("crop_sticks", 64);
+    public static ItemBase cropSticks = new ItemBase("crop_sticks", 64);
     public static ItemBase clipper = new ItemBase("clipper", 1);
     public static ItemBase journal = new ItemBase("journal", 1);
     public static ItemBase magnifyingGlass = new ItemBase("magnifying_glass", 1);
