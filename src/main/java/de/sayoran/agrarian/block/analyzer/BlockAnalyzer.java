@@ -1,5 +1,6 @@
 package de.sayoran.agrarian.block.analyzer;
 
+import com.sun.xml.internal.bind.v2.TODO;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -47,8 +48,11 @@ public class BlockAnalyzer extends BlockTileEntity<TileEntityAnalyzer> {
         return false;
     }
 
-    @SideOnly(Side.CLIENT)
+    /* fix rendering issues
+     * and deprecated methods */
+
     @Override
+    @SideOnly(Side.CLIENT)
     public BlockRenderLayer getBlockLayer() {
         return BlockRenderLayer.TRANSLUCENT;
     }
