@@ -3,7 +3,6 @@ package de.sayoran.agrarian.init;
 import de.sayoran.agrarian.item.ItemBase;
 import de.sayoran.agrarian.item.ItemModFood;
 import de.sayoran.agrarian.item.ItemModSeed;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.registries.IForgeRegistry;
 
