@@ -1,6 +1,7 @@
 package de.sayoran.agrarian.init;
 
 import de.sayoran.agrarian.item.ItemBase;
+import de.sayoran.agrarian.item.ItemClipping;
 import de.sayoran.agrarian.item.ItemModSeed;
 import de.sayoran.agrarian.item.ItemModFood;
 import net.minecraft.item.Item;
@@ -17,6 +18,8 @@ public class ModItems {
     public static ItemModSeed cornSeed = new ItemModSeed("corn_seed");
     public static ItemModFood corn = new ItemModFood("corn", 3, 0.6f,false,64);
     public static ItemModFood poppedCorn = new ItemModFood("popped_corn", 4, 0.6f,false, 32);
+    public static ItemClipping clipping = new ItemClipping("clipping");
+
 
     public static void register(IForgeRegistry<Item> registry) {
         registry.registerAll(
@@ -27,7 +30,8 @@ public class ModItems {
                 trowel,
                 cornSeed,
                 corn,
-                poppedCorn
+                poppedCorn,
+                clipping
         );
     }
 
@@ -40,6 +44,7 @@ public class ModItems {
         cornSeed.registerItemModel();
         corn.registerItemModel();
         poppedCorn.registerItemModel();
+        clipping.registerItemModel();
     }
 
 }
