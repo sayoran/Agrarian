@@ -22,6 +22,7 @@ public class ItemBase extends Item {
     }
 
     public void registerItemModel() {
+
         Agrarian.proxy.registerItemRenderer(this, 0, name);
     }
 
