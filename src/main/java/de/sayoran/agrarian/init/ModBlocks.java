@@ -15,7 +15,7 @@ public class ModBlocks {
 
     public static BlockAnalyzer seedAnalyzer = new BlockAnalyzer();
     public static BlockCropCorn cropCorn = new BlockCropCorn();
-    public static BlockCrop blockCrop = new BlockCrop(Material.WOOD, "crop_sticks");
+    public static BlockCrop blockCrop = new BlockCrop(Material.PLANTS, "crop_sticks");
 
 
     public static void register(IForgeRegistry<Block> registry) {
