@@ -1,0 +1,10 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "agrarian:block/crop_sticks"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
+}

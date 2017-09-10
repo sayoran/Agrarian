@@ -45,6 +45,7 @@ public class ModItems {
         cornSeed.registerItemModel();
         corn.registerItemModel();
         poppedCorn.registerItemModel();
+        clipping.registerItemModel();
     }
 
 }

@@ -1,5 +1,6 @@
 package de.sayoran.agrarian.item.tool;
 
+import de.sayoran.agrarian.init.ModBlocks;
 import de.sayoran.agrarian.item.ItemBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
@@ -41,6 +42,10 @@ public class ItemCropSticks extends ItemBase {
         if (world.getBlockState(pos).getBlock() != Blocks.FARMLAND){
             return EnumActionResult.FAIL;
         }
+
+        world.setBlockState(pos.up(), ModBlocks.blockCrop.getDefaultState());
+
+
 
         player.sendMessage(new TextComponentString("Right clicked"));
         return EnumActionResult.SUCCESS;
