@@ -1,6 +1,7 @@
 package de.sayoran.agrarian.block;
 
 
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.util.math.BlockPos;
@@ -15,7 +16,19 @@ public class BlockCrop extends BlockTileEntity<TileEntityCrop> implements IPlant
 
     public BlockCrop(Material material, String name){
         super(material, name);
+        this.setTickRandomly(true);
+        this.isBlockContainer =true;
+        this.setSoundType(SoundType.PLANT);
+        this.setHardness(0.0F);
+        this.setCreativeTab(null);
+
     }
+
+    @Override
+    public int getMetaFromState(IBlockState state){
+        return 0;
+    }
+
 
     @Override
     @Deprecated
