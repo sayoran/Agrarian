@@ -2,7 +2,7 @@ package de.sayoran.agrarian.item.tool;
 
 import de.sayoran.agrarian.item.ItemBase;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.ItemStack;
+import net.minecraft.init.Blocks;
 import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
@@ -33,7 +33,12 @@ public class ItemCropSticks extends ItemBase {
         }
 
         final BlockPos cropPos = pos.up();
+
         if (!world.isAirBlock(cropPos)) {
+            return EnumActionResult.FAIL;
+        }
+
+        if (world.getBlockState(pos).getBlock() != Blocks.FARMLAND){
             return EnumActionResult.FAIL;
         }
 
