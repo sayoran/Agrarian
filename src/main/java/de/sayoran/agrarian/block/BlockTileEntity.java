@@ -8,11 +8,19 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
 import javax.annotation.Nullable;
+import java.util.Optional;
 
 public abstract class BlockTileEntity<TE extends TileEntity> extends BlockBase {
 
     public BlockTileEntity(Material material, String name) {
         super(material, name);
+    }
+
+    public static final <T> Optional<T> getTile(IBlockAccess world, BlockPos pos, Class<T> type) {
+        return Optional.ofNullable(world)
+                .map(w -> w.getTileEntity(pos))
+                .filter(te -> type.isAssignableFrom(te.getClass()))
+                .map(te -> type.cast(te));
     }
 
     public abstract Class<TE> getTileEntityClass();
